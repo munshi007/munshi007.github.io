@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rohan Munshi — Data &amp; AI engineer building agents you can trust</title>
+<meta name="description" content="I build production AI systems: multi-agent workflows, RAG with traceable citations, and the data pipelines underneath them. I&#39;ve been shipping data infrastructure since 2019, from ">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f4eee2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1d1b17" media="(prefers-color-scheme: dark)">
+<meta name="generator" content="folio">
+<link rel="canonical" href="https://munshi007.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Rohan Munshi — Data &amp; AI engineer building agents you can trust">
+<meta property="og:description" content="I build production AI systems: multi-agent workflows, RAG with traceable citations, and the data pipelines underneath them. I&#39;ve been shipping data infrastructure since 2019, from ">
+<meta property="og:image" content="https://munshi007.github.io/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/31157408?v=4&amp;s=400">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&amp;family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Rohan Munshi","jobTitle":"Data & AI engineer building agents you can trust","url":"https://munshi007.github.io/","image":"https://avatars.githubusercontent.com/u/31157408?v=4&s=400","address":{"@type":"PostalAddress","addressLocality":"Magdeburg, Germany"},"sameAs":["https://github.com/munshi007","https://www.linkedin.com/in/rohan-munshi-006/","https://huggingface.co/RMunshi"]}</script>
+<style>
+
+:root{--bg:#f4eee2;--bg2:#ebe3d3;--ink:#1c1915;--soft:#4f4a42;--paper:#fff8ef;--red:#c2402b;--blue:#21508f;--yel:#e3ab32;--on-yel:#1c1915;
+  --grid:rgba(28,25,21,.055);--rule:rgba(28,25,21,.16);--line:rgba(28,25,21,.14);--on-red:#fff8ef;--on-blue:#fff8ef;
+  --band:#1c1915;--on-band:#f4eee2;--band-acc:#eab944;
+  --shadow:0 10px 24px rgba(28,25,21,.13),0 1px 2px rgba(28,25,21,.08);
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;--text:"Figtree",ui-sans-serif,system-ui,sans-serif;
+  --max:1180px;--gut:72px;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1b17;--bg2:#26231e;--ink:#f1e9da;--soft:#c3b9a7;--paper:#2a2620;
+  --red:#e0573f;--blue:#6f9ae0;--yel:#eab944;--on-yel:#1d1b17;--grid:rgba(241,233,218,.04);--rule:rgba(241,233,218,.16);--line:rgba(241,233,218,.14);
+  --on-red:#1d1b17;--on-blue:#1d1b17;--band:#f1e9da;--on-band:#1d1b17;--band-acc:#b13a25;
+  --shadow:0 12px 30px rgba(0,0,0,.45),0 1px 0 rgba(255,255,255,.04) inset;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1d1b17;--bg2:#26231e;--ink:#f1e9da;--soft:#c3b9a7;--paper:#2a2620;
+  --red:#e0573f;--blue:#6f9ae0;--yel:#eab944;--on-yel:#1d1b17;--grid:rgba(241,233,218,.04);--rule:rgba(241,233,218,.16);--line:rgba(241,233,218,.14);
+  --on-red:#1d1b17;--on-blue:#1d1b17;--band:#f1e9da;--on-band:#1d1b17;--band-acc:#b13a25;
+  --shadow:0 12px 30px rgba(0,0,0,.45);color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--text);-webkit-font-smoothing:antialiased;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:48px 48px}
+h1,h2,h3,p{margin:0}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:var(--rule)}
+a:hover{color:var(--blue);text-decoration-color:currentColor}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;z-index:9}
+.skip:focus{left:16px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+
+/* ---- top bar ---- */
+.top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:28px;font-size:14px}
+.top .where{display:inline-flex;align-items:center;gap:10px;color:var(--soft)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--yel);box-shadow:0 0 0 3px color-mix(in srgb,var(--yel) 30%,transparent)}
+.top nav{display:flex;gap:4px;flex-wrap:wrap}
+.top nav a{text-decoration:none;padding:8px 12px;border-radius:999px;font-weight:600}
+.top nav a:hover{background:var(--ink);color:var(--bg)}
+
+/* ---- hero: the stack ---- */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px;padding-top:56px;padding-bottom:56px}
+.hero h1{font:800 clamp(3.2rem,6.4vw,5.4rem)/.95 var(--display);letter-spacing:-.025em;max-width:9ch;text-wrap:balance}
+.hero .hl{font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.35;max-width:22ch;margin-top:22px;text-wrap:pretty}
+.status{display:inline-block;margin-bottom:20px;font-size:13px;font-weight:600;padding:4px 12px;border-radius:999px;background:var(--yel);color:var(--on-yel)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;
+  border:2px solid var(--ink);background:var(--bg);color:var(--ink);transition:transform .15s ease,background .15s ease,color .15s ease}
+.btn:hover{background:var(--ink);color:var(--bg);transform:translateY(-2px)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn.primary:hover{background:var(--red);border-color:var(--red);color:var(--on-red)}
+.stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:8px 28px;margin-top:44px;padding-top:20px;border-top:2px solid var(--ink);max-width:420px}
+.stats b{display:block;font:800 2.2rem/1 var(--display);letter-spacing:-.02em}
+.stats span{font-size:13px;color:var(--soft)}
+.stats div:nth-child(1) b{color:var(--red)}.stats div:nth-child(2) b{color:var(--blue)}
+
+.pile{position:relative;min-height:560px}
+.card{position:absolute;width:min(360px,62%);background:var(--paper);color:var(--ink);border-radius:12px;padding:20px 22px;box-shadow:var(--shadow);
+  text-decoration:none;display:block;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s ease}
+.card b{font:800 1.5rem/1.1 var(--display);letter-spacing:-.01em;display:block}
+.card p{margin:8px 0 14px;font-size:15px;line-height:1.5;color:var(--soft)}
+.card .go{position:absolute;right:18px;top:20px;opacity:.35;transition:opacity .2s,transform .2s}
+.card:hover{color:var(--ink);transform:rotate(0) translateY(-6px)!important;z-index:5;box-shadow:0 18px 40px rgba(28,25,21,.2)}
+.card:hover .go{opacity:1;transform:translate(2px,-2px)}
+.c0{left:14%;top:0;transform:rotate(3deg)}.c1{right:0;top:200px;transform:rotate(-4deg)}.c2{left:2%;top:360px;transform:rotate(-2deg);z-index:2}
+.pin{position:absolute;top:-7px;left:50%;width:14px;height:14px;border-radius:50%;background:var(--yel)}
+.c0 .pin{background:var(--red)}.c1 .pin{background:var(--blue);border-radius:2px}.c2 .pin{background:var(--yel);border-radius:0;clip-path:polygon(50% 0,100% 100%,0 100%);width:16px;height:15px;top:-8px}
+.tagrow{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-flex;align-items:center;gap:5px;padding:3px 12px;border-radius:999px;font-size:13px;font-weight:600;line-height:1.5}
+.t-red{background:var(--red);color:var(--on-red)}.t-blue{background:var(--blue);color:var(--on-blue)}.t-ink{background:var(--ink);color:var(--bg)}
+.t-yel{background:var(--yel);color:var(--on-yel)}
+.tag svg{flex:none}
+
+/* ---- signature (from bauhaus): the tool marquee ---- */
+.marquee{display:flex;align-items:stretch;min-height:60px;background:var(--band);color:var(--on-band);overflow:hidden;border-block:3px solid var(--band)}
+.marquee .label{flex:none;display:flex;align-items:center;gap:10px;padding:0 22px;background:var(--red);color:var(--on-red);font:800 14px/1 var(--display);text-transform:uppercase;letter-spacing:.1em;position:relative;z-index:1}
+.marquee .label .shp{background:var(--on-red)}
+.mqwrap{flex:1;overflow:hidden;display:flex;align-items:center}
+.mq{display:flex;width:max-content;animation:mq 70s linear infinite}
+.marquee:hover .mq,.marquee:focus-within .mq{animation-play-state:paused}
+.marquee:focus-visible{outline-offset:-3px;border-radius:0}
+.mq ul{display:flex;align-items:center;margin:0;padding:0 0 0 18px;list-style:none}
+.mq li{display:flex;align-items:center;gap:16px;padding:0 16px 0 0;font:600 19px/1 var(--display);white-space:nowrap}
+.mq li.g{color:var(--band-acc);font:800 13px/1 var(--text);text-transform:uppercase;letter-spacing:.12em}
+.shp{display:inline-block;flex:none;width:11px;height:11px}
+.shp.c{border-radius:50%;background:var(--red)}.shp.s{background:var(--blue)}.shp.t{background:var(--yel);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.marquee .shp.s{background:color-mix(in srgb,var(--blue) 60%,var(--on-band))}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---- sections ---- */
+section.wrap{padding-top:104px;scroll-margin-top:24px}
+.sh{display:grid;grid-template-columns:96px 1fr;align-items:end;gap:0 24px;padding-bottom:18px;border-bottom:2px solid var(--ink);margin-bottom:40px}
+.sh .n{font:800 3.6rem/.8 var(--display);color:var(--red);letter-spacing:-.03em}
+section:nth-of-type(3n+2) .sh .n{color:var(--blue)}
+section:nth-of-type(3n) .sh .n{color:var(--yel)}
+.sh h2{font:800 clamp(2rem,4vw,2.9rem)/1 var(--display);letter-spacing:-.02em}
+.sh small{grid-column:2;font-size:14px;color:var(--soft);margin-top:8px}
+
+/* about */
+.about{display:grid;grid-template-columns:96px minmax(0,1fr) 300px;gap:24px}
+.about .body{grid-column:2;font-size:1.22rem;line-height:1.55;max-width:58ch}
+.about .body p+p{margin-top:1em}
+.about .body strong{background:linear-gradient(transparent 62%,color-mix(in srgb,var(--yel) 60%,transparent) 62%);font-weight:700}
+.about .body a{color:var(--blue);font-weight:600}
+.avatar{width:100%;max-width:240px;aspect-ratio:1;object-fit:cover;border-radius:12px;box-shadow:var(--shadow);transform:rotate(2deg);background:var(--paper);border:8px solid var(--paper)}
+
+/* work */
+.feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.pcard{position:relative;background:var(--paper);border-radius:14px;box-shadow:var(--shadow);padding:28px 28px 24px;display:flex;flex-direction:column;gap:14px;
+  transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+.pcard:nth-child(odd){transform:rotate(-.6deg)}.pcard:nth-child(even){transform:rotate(.6deg)}
+.pcard:hover{transform:rotate(0) translateY(-4px)}
+.pcard:last-child:nth-child(odd){grid-column:1/-1}
+.pcard .kick{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:13px;color:var(--soft);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.pcard .kick .tag{text-transform:none;letter-spacing:0}
+.pcard h3{font:800 clamp(1.6rem,2.6vw,2.1rem)/1.05 var(--display);letter-spacing:-.015em}
+.pcard h3 a{text-decoration:none}
+.pcard h3 a:hover{color:var(--red)}
+.pcard .desc{color:var(--soft);max-width:62ch}
+.pcard ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.pcard li{position:relative;padding-left:26px;font-size:15.5px;line-height:1.5}
+.pcard li::before{content:"";position:absolute;left:0;top:.35em;width:14px;height:14px;border-radius:4px;border:2px solid var(--blue)}
+.pcard li:nth-child(2)::before{border-color:var(--red);border-radius:50%}
+.pcard li:nth-child(3)::before{border-color:var(--yel);border-radius:0;transform:rotate(45deg) scale(.85)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:13px;padding:3px 10px;border-radius:999px;border:1.5px solid var(--line);color:var(--soft);background:var(--bg)}
+.plinks{display:flex;flex-wrap:wrap;gap:16px;margin-top:auto;padding-top:6px;font-size:14px;font-weight:600}
+.plinks a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;min-height:32px}
+.plinks a:hover{color:var(--red)}
+.more{margin-top:48px}
+.more h3{font:800 1.3rem/1 var(--display);margin-bottom:6px}
+.row{display:grid;grid-template-columns:96px minmax(0,1.1fr) minmax(0,2fr) auto;gap:20px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--rule);text-decoration:none}
+.row:hover{background:linear-gradient(90deg,color-mix(in srgb,var(--yel) 16%,transparent),transparent)}
+.row .y{font:800 1.15rem/1 var(--display);color:var(--blue)}
+.row b{font:800 1.15rem/1.2 var(--display)}
+.row p{color:var(--soft);font-size:15.5px}
+
+/* experience */
+.span{display:flex;height:14px;border-radius:999px;overflow:hidden;background:var(--line);margin:0 0 10px}
+.span i{display:block;height:100%}
+.spanlab{display:flex;justify-content:space-between;font-size:13px;color:var(--soft);margin-bottom:36px}
+.job{display:grid;grid-template-columns:96px minmax(0,1fr) minmax(0,1.6fr);gap:24px;padding:26px 0;border-bottom:1px solid var(--rule)}
+.job:first-of-type{padding-top:0}
+.job .yr{font:800 1.6rem/1 var(--display);letter-spacing:-.02em}
+.job .yr small{display:block;font:500 12px/1.4 var(--text);color:var(--soft);margin-top:6px;letter-spacing:0}
+.job h3{font:800 1.35rem/1.15 var(--display)}
+.job .org{font-weight:600;margin-top:4px}
+.job .org a{text-decoration:none;color:var(--blue)}
+.job .meta{font-size:14px;color:var(--soft);margin-top:4px}
+.job .now{display:inline-block;margin-top:10px}
+.job ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.job li{position:relative;padding-left:22px;line-height:1.5}
+.job li::before{content:"";position:absolute;left:0;top:.6em;width:10px;height:2px;background:var(--red)}
+.job .sum{color:var(--soft)}
+
+/* education */
+.edu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.ecard{background:var(--paper);border-radius:14px;box-shadow:var(--shadow);padding:26px 28px;border-top:8px solid var(--blue)}
+.ecard:nth-child(2){border-top-color:var(--red)}.ecard:nth-child(3){border-top-color:var(--yel)}
+.ecard:last-child:nth-child(odd){grid-column:1/-1}
+.ecard h3{font:800 1.35rem/1.15 var(--display)}
+.ecard .deg{font-weight:600;margin-top:6px}
+.ecard .meta{font-size:14px;color:var(--soft);margin-top:4px}
+.ecard p{color:var(--soft);margin-top:10px;font-size:15.5px}
+
+/* skills */
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2px;background:var(--ink);border:2px solid var(--ink);border-radius:14px;overflow:hidden}
+.sk>div{background:var(--bg);padding:22px 22px 26px}
+.sk h3{font:800 1.15rem/1.1 var(--display);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.sk h3::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--red)}
+.sk>div:nth-child(4n+2) h3::before{background:var(--blue);border-radius:3px}
+.sk>div:nth-child(4n+3) h3::before{background:var(--yel);border-radius:0;transform:rotate(45deg) scale(.8)}
+.sk>div:nth-child(4n+4) h3::before{background:var(--ink)}
+.sk ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.sk li{font-size:14px;padding:4px 11px;border-radius:999px;background:var(--paper);border:1.5px solid var(--line)}
+
+/* awards / writing */
+.list .row{grid-template-columns:96px minmax(0,1fr) auto}
+
+/* footer */
+footer{margin-top:120px;padding:72px 0 56px;border-top:2px solid var(--ink)}
+footer .big{font:800 clamp(2.4rem,6vw,4.6rem)/.95 var(--display);letter-spacing:-.03em;max-width:14ch}
+footer .big a{text-decoration:none;color:var(--red);word-break:break-word}
+footer .big a:hover{color:var(--blue)}
+footer .fine{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:40px;font-size:14px;color:var(--soft)}
+
+@media (max-width:980px){
+  :root{--gut:40px}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .pile{min-height:560px;max-width:640px}
+  .about{grid-template-columns:1fr 220px}.about .body{grid-column:1}
+}
+@media (max-width:700px){
+  :root{--gut:16px}
+  body{font-size:16px;background-size:32px 32px}
+  .top{padding-top:16px}.top nav{display:none}
+  .hero{padding-top:36px;padding-bottom:24px;gap:36px}
+  .hero h1{font-size:clamp(2.9rem,15vw,4rem)}
+  .stats{margin-top:32px}.stats b{font-size:1.8rem}
+  .pile{min-height:0;display:grid;gap:20px;padding:6px 6px 0}
+  .card{position:relative;inset:auto;width:100%}
+  .c0{transform:rotate(1.2deg)}.c1{transform:rotate(-1.2deg)}.c2{transform:rotate(.8deg)}
+  section.wrap{padding-top:72px}
+  .sh{grid-template-columns:56px 1fr;gap:0 12px;margin-bottom:28px}.sh .n{font-size:2.6rem}
+  .about{grid-template-columns:1fr}.about .body{font-size:1.1rem}.about .pic{order:-1}.avatar{max-width:120px}
+  .feat,.edu{grid-template-columns:1fr}
+  .pcard{padding:22px 20px}
+  .row,.list .row{grid-template-columns:1fr auto;gap:4px 14px}
+  .row .y{grid-row:1;grid-column:1}.row b{grid-column:1/-1}.row p{grid-column:1/-1}.row .tagrow{grid-row:1;grid-column:2}
+  .job{grid-template-columns:1fr;gap:10px}
+  .job .yr{display:flex;align-items:baseline;gap:10px}.job .yr small{margin:0}
+  .marquee{min-height:52px}.marquee .label{padding:0 14px;font-size:12.5px}.mq li{font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.mqwrap{overflow-x:auto}.mq ul[aria-hidden]{display:none}}
+
+
+.folio-badge{position:fixed;right:14px;bottom:14px;z-index:50;display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;font:500 12px/1 ui-sans-serif,system-ui,sans-serif;text-decoration:none;color:#555;background:rgba(255,255,255,.85);border:1px solid rgba(0,0,0,.08);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:.75;transition:opacity .2s}
+.folio-badge:hover{opacity:1}
+@media (prefers-color-scheme:dark){.folio-badge{color:#bbb;background:rgba(20,20,20,.8);border-color:rgba(255,255,255,.1)}}
+@media print{.folio-badge{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a><div class="wrap">
+<div class="top"><span class="where"><span class="dot" aria-hidden="true"></span>Magdeburg, Germany</span><nav aria-label="Sections"><a href="#about">About</a><a href="#projects">Work</a><a href="#experience">Experience</a><a href="#skills">Toolkit</a></nav></div>
+<header class="hero">
+<div class="intro">
+
+<h1>Rohan Munshi</h1>
+<p class="hl">Data &amp; AI engineer building agents you can trust</p>
+<div class="cta"><a class="btn primary" href="mailto:rohanmunshi08@gmail.com"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 5h18v14H3z"/><path fill="none" stroke="currentColor" stroke-width="2" d="m3 6 9 7 9-7"/></svg>Email</a><a class="btn" href="https://github.com/munshi007" target="_blank" rel="me noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a><a class="btn" href="https://www.linkedin.com/in/rohan-munshi-006/" target="_blank" rel="me noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>LinkedIn</a><a class="btn" href="https://huggingface.co/RMunshi" target="_blank" rel="me noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M2.5 12h19M12 2.5c2.6 2.6 4 6 4 9.5s-1.4 6.9-4 9.5c-2.6-2.6-4-6-4-9.5s1.4-6.9 4-9.5Z"/></svg>Hugging Face</a></div>
+<div class="stats"><div><b>7</b><span>years since first role</span></div><div><b>31</b><span>GitHub stars</span></div><div><b>5</b><span>projects</span></div></div>
+</div>
+<div class="pile" aria-label="Selected work"><a class="card c0" href="https://github.com/munshi007/Aura-State" target="_blank" rel="noopener"><span class="pin" aria-hidden="true"></span><b>Aura-State</b><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M7 17 17 7M8 7h9v9"/></svg></span><p>A design-time verifier for LLM agents: point it at a LangGraph, CrewAI, AutoGen or MCP agent and it proves the…</p><span class="tagrow"><span class="tag t-red"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>30</span><span class="tag t-ink">2026</span></span></a><a class="card c1" href="https://huggingface.co/RMunshi/vlm-student-thesis" target="_blank" rel="noopener"><span class="pin" aria-hidden="true"></span><b>Document Intelligence Pipeline</b><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M7 17 17 7M8 7h9v9"/></svg></span><p>My MSc thesis system: zero-shot extraction that takes any PDF plus any JSON schema and returns structured…</p><span class="tagrow"><span class="tag t-blue">2026</span></span></a><a class="card c2" href="https://munshi007.github.io/worldcup-2026-predictions/" target="_blank" rel="noopener"><span class="pin" aria-hidden="true"></span><b>World Cup 2026 Predictions</b><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M7 17 17 7M8 7h9v9"/></svg></span><p>Live match predictions for Prior Labs&#39; World Cup forecasting competition, blending TabPFN with de-vigged sharp…</p><span class="tagrow"><span class="tag t-yel"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>75% outcome accuracy</span><span class="tag t-ink">2026</span></span></a></div>
+</header>
+</div><div class="marquee" tabindex="0" role="region" aria-label="Tools"><div class="label"><i class="shp c" aria-hidden="true"></i>Tools</div><div class="mqwrap"><div class="mq"><ul><li class="g">Agents &amp; LLMs</li><li>LangGraph<i class="shp c" aria-hidden="true"></i></li><li>CrewAI<i class="shp s" aria-hidden="true"></i></li><li>AutoGen<i class="shp t" aria-hidden="true"></i></li><li>LlamaIndex<i class="shp c" aria-hidden="true"></i></li><li>AWS Bedrock<i class="shp s" aria-hidden="true"></i></li><li>LoRA / DPO<i class="shp t" aria-hidden="true"></i></li><li class="g">Reliability</li><li>Golden eval sets<i class="shp s" aria-hidden="true"></i></li><li>RAGas<i class="shp t" aria-hidden="true"></i></li><li>Pydantic<i class="shp c" aria-hidden="true"></i></li><li>Prompt regression tests<i class="shp s" aria-hidden="true"></i></li><li class="g">Data</li><li>Databricks<i class="shp t" aria-hidden="true"></i></li><li>dbt<i class="shp c" aria-hidden="true"></i></li><li>Kafka<i class="shp s" aria-hidden="true"></i></li><li>Airflow<i class="shp t" aria-hidden="true"></i></li><li>Spark<i class="shp c" aria-hidden="true"></i></li><li>Postgres<i class="shp s" aria-hidden="true"></i></li><li>Neo4j<i class="shp t" aria-hidden="true"></i></li><li class="g">Cloud</li><li>AWS<i class="shp c" aria-hidden="true"></i></li><li>Terraform / CDK<i class="shp s" aria-hidden="true"></i></li><li>Docker<i class="shp t" aria-hidden="true"></i></li><li>Kubernetes<i class="shp c" aria-hidden="true"></i></li><li>MLflow<i class="shp s" aria-hidden="true"></i></li></ul><ul aria-hidden="true"><li class="g">Agents &amp; LLMs</li><li>LangGraph<i class="shp c" aria-hidden="true"></i></li><li>CrewAI<i class="shp s" aria-hidden="true"></i></li><li>AutoGen<i class="shp t" aria-hidden="true"></i></li><li>LlamaIndex<i class="shp c" aria-hidden="true"></i></li><li>AWS Bedrock<i class="shp s" aria-hidden="true"></i></li><li>LoRA / DPO<i class="shp t" aria-hidden="true"></i></li><li class="g">Reliability</li><li>Golden eval sets<i class="shp s" aria-hidden="true"></i></li><li>RAGas<i class="shp t" aria-hidden="true"></i></li><li>Pydantic<i class="shp c" aria-hidden="true"></i></li><li>Prompt regression tests<i class="shp s" aria-hidden="true"></i></li><li class="g">Data</li><li>Databricks<i class="shp t" aria-hidden="true"></i></li><li>dbt<i class="shp c" aria-hidden="true"></i></li><li>Kafka<i class="shp s" aria-hidden="true"></i></li><li>Airflow<i class="shp t" aria-hidden="true"></i></li><li>Spark<i class="shp c" aria-hidden="true"></i></li><li>Postgres<i class="shp s" aria-hidden="true"></i></li><li>Neo4j<i class="shp t" aria-hidden="true"></i></li><li class="g">Cloud</li><li>AWS<i class="shp c" aria-hidden="true"></i></li><li>Terraform / CDK<i class="shp s" aria-hidden="true"></i></li><li>Docker<i class="shp t" aria-hidden="true"></i></li><li>Kubernetes<i class="shp c" aria-hidden="true"></i></li><li>MLflow<i class="shp s" aria-hidden="true"></i></li></ul></div></div></div><main id="main"><section id="about" class="wrap"><div class="sh"><span class="n" aria-hidden="true">01</span><h2>About</h2></div><div class="about"><div class="body"><p>I build production AI systems: multi-agent workflows, RAG with traceable citations, and the data pipelines underneath them. I&#39;ve been shipping data infrastructure since 2019, from ETL at Tata Consultancy Services to LLM platforms at Berlin startups.</p>
+<p>I care most about the part demos skip: <strong>evaluation</strong>, grounding and safety. That&#39;s why I built <a href="https://github.com/munshi007/Aura-State">Aura-State</a>, which proves an agent is injection-safe before it ships.</p></div><div class="pic"><img class="avatar" src="https://avatars.githubusercontent.com/u/31157408?v=4&amp;s=400" alt="Rohan Munshi" loading="lazy"></div></div></section>
+<section id="projects" class="wrap"><div class="sh"><span class="n" aria-hidden="true">02</span><h2>Work</h2></div><div class="feat"><article class="pcard">
+<div class="kick"><div class="tagrow"><span class="tag t-red"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>30</span><span class="tag t-ink">2026</span></div></div>
+<h3><a href="https://github.com/munshi007/Aura-State" target="_blank" rel="noopener">Aura-State</a></h3>
+<p class="desc">A design-time verifier for LLM agents: point it at a LangGraph, CrewAI, AutoGen or MCP agent and it proves the agent can&#39;t be tricked into leaking data, or shows the exact path that can.</p>
+<ul><li>Checks five properties: taint safety, output obligations, liveness, calibration and abstention</li><li>Parses agent source without executing it, and fails CI on regressions</li></ul>
+<div class="chips"><span>Python</span><span>Z3/SMT</span><span>Model checking</span><span>LLM agents</span></div>
+<div class="plinks"><a href="https://github.com/munshi007/Aura-State" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>Source</a></div>
+</article><article class="pcard">
+<div class="kick"><div class="tagrow"><span class="tag t-blue">2026</span></div></div>
+<h3><a href="https://huggingface.co/RMunshi/vlm-student-thesis" target="_blank" rel="noopener">Document Intelligence Pipeline</a></h3>
+<p class="desc">My MSc thesis system: zero-shot extraction that takes any PDF plus any JSON schema and returns structured output with provenance and quality scores.</p>
+<ul><li>Distilled a GPT-4o vision teacher into a Llama-3.2-11B-Vision student for document hierarchy recognition</li><li>Fully reproducible: pinned models, environment and smoke tests regenerate the thesis numbers</li></ul>
+<div class="chips"><span>VLM distillation</span><span>Llama 3.2 Vision</span><span>PyTorch</span></div>
+<div class="plinks"><a href="https://huggingface.co/RMunshi/vlm-student-thesis" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M2.5 12h19M12 2.5c2.6 2.6 4 6 4 9.5s-1.4 6.9-4 9.5c-2.6-2.6-4-6-4-9.5s1.4-6.9 4-9.5Z"/></svg>huggingface.co</a><a href="https://github.com/munshi007/document_intelligence_pipeline" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>Source</a></div>
+</article><article class="pcard">
+<div class="kick"><div class="tagrow"><span class="tag t-yel"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>75% outcome accuracy</span><span class="tag t-ink">2026</span></div></div>
+<h3><a href="https://munshi007.github.io/worldcup-2026-predictions/" target="_blank" rel="noopener">World Cup 2026 Predictions</a></h3>
+<p class="desc">Live match predictions for Prior Labs&#39; World Cup forecasting competition, blending TabPFN with de-vigged sharp bookmaker odds.</p>
+<ul><li>75% outcome accuracy and 0.67 log-loss across 28 graded matches, vs a ~59% baseline</li></ul>
+<div class="chips"><span>TabPFN</span><span>Python</span><span>Forecasting</span></div>
+<div class="plinks"><a href="https://munshi007.github.io/worldcup-2026-predictions/" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M2.5 12h19M12 2.5c2.6 2.6 4 6 4 9.5s-1.4 6.9-4 9.5c-2.6-2.6-4-6-4-9.5s1.4-6.9 4-9.5Z"/></svg>munshi007.github.io</a><a href="https://github.com/munshi007/worldcup-2026-predictions" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>Source</a></div>
+</article></div><div class="more"><div><a class="row" href="https://github.com/munshi007/aura-runtime" target="_blank" rel="noopener"><span class="y">2026</span><b>Aura Runtime</b><p>Runtime verification for AI agents: turns MCP and OpenTelemetry activity into an evidence log and checks it against temporal safety policies.</p><span class="tagrow"><span class="tag t-ink">Python</span></span></a><a class="row" href="https://github.com/munshi007/Energy-Market-Data-Pipeline" target="_blank" rel="noopener"><span class="y">2025</span><b>Energy Market Data Pipeline</b><p>Airflow pipeline that simulates energy market clearing and models the price impact of extra renewable supply.</p><span class="tagrow"><span class="tag t-red"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>1</span><span class="tag t-ink">Airflow</span></span></a></div></div></section>
+<section id="experience" class="wrap"><div class="sh"><span class="n" aria-hidden="true">03</span><h2>Experience</h2></div><div class="span" aria-hidden="true"><i style="width:36.65%;background:var(--blue)"></i><i style="width:8.05%;background:transparent"></i><i style="width:19.45%;background:var(--red)"></i><i style="width:35.84%;background:var(--yel)"></i></div><div class="spanlab" aria-hidden="true"><span>2019</span><span>2026</span></div><div class="job">
+<div class="yr">2026<small>May 2026 – Present</small></div>
+<div><h3>Data and AI Engineer</h3><div class="org">Zelara</div><div class="meta">Berlin</div><span class="tag t-blue now">Now</span></div>
+<div><ul><li>Shipped a personalization pipeline: a contextual-bandit scorer picks timing and audience, an LLM on AWS Bedrock writes the message</li><li>Own the AWS production stack end to end: CDK Lambdas, multi-tenant Postgres with per-tenant isolation, daily experiment monitoring</li></ul></div>
+</div><div class="job">
+<div class="yr">2025<small>Nov 2025 – Apr 2026</small></div>
+<div><h3>Lead Data and AI Engineer</h3><div class="org">Utah Tech Labs</div><div class="meta">Remote (US)</div></div>
+<div><ul><li>Reduced hallucinations in financial data extraction with a LangGraph multi-agent system and stateful supervisors on AWS Bedrock</li><li>Lifted user conversion with a contextual-bandit loop that self-optimizes message routing</li><li>Grounded RAG in Neo4j knowledge graphs for traceable, compliance-ready citations</li></ul></div>
+</div><div class="job">
+<div class="yr">2024<small>Nov 2024 – Jul 2025</small></div>
+<div><h3>Data and AI Engineer</h3><div class="org">Talonic</div><div class="meta">Berlin</div></div>
+<div><ul><li>Built production RAG and agentic workflows with structured outputs and traceable citations</li><li>Made LLM changes safe to ship with golden evaluation sets, prompt regression tests and grounding checks</li><li>Fine-tuned domain LLM/VLM adapters to improve entity extraction, with monitoring and rollback</li></ul></div>
+</div><div class="job">
+<div class="yr">2024<small>Mar 2024 – Present</small></div>
+<div><h3>Master&#39;s Thesis</h3><div class="org">Pragmatic Industries</div><div class="meta">Kirchheim</div><span class="tag t-blue now">Now</span></div>
+<div><p class="sum">Hybrid document intelligence: YOLOv8 layout detection, fine-tuned LayoutLMv3 extraction, and a fine-tuned Llama 3 that generates schemas for unseen document types.</p></div>
+</div><div class="job">
+<div class="yr">2024<small>May 2024 – Oct 2024</small></div>
+<div><h3>Data Scientist Intern</h3><div class="org">Index Exchange</div><div class="meta">Berlin</div></div>
+<div><ul><li>Built real-time Spark, Kafka and Airflow pipelines for an MLOps framework on AWS</li><li>Trained and benchmarked real-time bidding models on SageMaker</li></ul></div>
+</div><div class="job">
+<div class="yr">2022<small>Oct 2022 – Mar 2024</small></div>
+<div><h3>Data Engineer (Working Student)</h3><div class="org">Ek Robotics</div><div class="meta">Hamburg</div></div>
+<div><ul><li>Designed a data warehouse on S3 and Redshift, and automated business processes with Lambda and Step Functions</li></ul></div>
+</div><div class="job">
+<div class="yr">2019<small>Jul 2019 – Mar 2022</small></div>
+<div><h3>Data Engineer</h3><div class="org">Tata Consultancy Services</div><div class="meta">Bangalore</div></div>
+<div><ul><li>Built ETL over millions of records with Informatica, PL/SQL, Hive and dbt</li></ul></div>
+</div></section>
+<section id="education" class="wrap"><div class="sh"><span class="n" aria-hidden="true">04</span><h2>Education</h2></div><div class="edu"><div class="ecard"><h3>Otto von Guericke University Magdeburg</h3><div class="deg">MSc, Data and Knowledge Engineering</div><p>Data Mining, Machine Learning, Deep Learning, GenAI</p></div><div class="ecard"><h3>SRM Institute of Science and Technology</h3><div class="deg">Bachelor&#39;s, Computer Science and Engineering</div><div class="meta">2019</div></div></div></section>
+<section id="skills" class="wrap"><div class="sh"><span class="n" aria-hidden="true">05</span><h2>Toolkit</h2></div><div class="sk"><div><h3>Agents &amp; LLMs</h3><ul><li>LangGraph</li><li>CrewAI</li><li>AutoGen</li><li>LlamaIndex</li><li>AWS Bedrock</li><li>LoRA / DPO</li></ul></div><div><h3>Reliability</h3><ul><li>Golden eval sets</li><li>RAGas</li><li>Pydantic</li><li>Prompt regression tests</li></ul></div><div><h3>Data</h3><ul><li>Databricks</li><li>dbt</li><li>Kafka</li><li>Airflow</li><li>Spark</li><li>Postgres</li><li>Neo4j</li></ul></div><div><h3>Cloud</h3><ul><li>AWS</li><li>Terraform / CDK</li><li>Docker</li><li>Kubernetes</li><li>MLflow</li></ul></div></div></section></main>
+<footer class="wrap"><p class="big"><a href="mailto:rohanmunshi08@gmail.com">Say hello.</a></p>
+<div class="fine"><span>© 2026 Rohan Munshi</span><span><a href="https://github.com/munshi007" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/rohan-munshi-006/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://huggingface.co/RMunshi" target="_blank" rel="noopener">Hugging Face</a></span></div></footer>
+<a class="folio-badge" href="https://github.com/munshi007/folio" target="_blank" rel="noopener">✦ built with folio</a>
+
+</body>
+</html>
